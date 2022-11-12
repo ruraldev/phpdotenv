@@ -19,7 +19,7 @@ Release notes for 5.0.0 are available [here](https://github.com/vlucas/phpdotenv
 7. The parser has been moved to its own namespace and parses entire files now. This change is expected to have little impact when upgrading. The `Lines` class has also moved to the parser namespace.
 8. The loader now only returns the variables that were actually loaded into the repository, and not all the variables from the file. Moreover, it now expects as input the result of running the new parser (an array of entries), rather than raw file content.
 
-The changes listed in (4) mean that instead of:
+The changes listed in (5) mean that instead of:
 
 ```php
 $repository = Dotenv\Repository\RepositoryBuilder::create()
